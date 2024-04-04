@@ -1,0 +1,126 @@
+/* body{ */
+    /* background-image: url(bg.jpg); */
+
+
+    /* height: 100%;
+    width: 100%;
+    margin:fixed;
+    color: rgb(86, 77, 210);
+}
+.reg{
+    height: 300px;
+    width: 500px;
+    background: rgb(122, 161, 167);
+    margin: 50px 450px ;
+    padding: 20px;
+}
+input{
+    background: white;
+}
+select{
+    background: white;
+}
+textarea{
+    background: white;
+}
+checkbox{
+    background: white;
+}
+label{
+    background: white;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+li{
+    float: left;
+    margin: 50px 5px;
+    
+}
+li a{
+    display: block;
+    padding: 10px 14px;
+    color: rgb(231, 123, 123);
+    text-align: center;
+   text-decoration: none;
+   background:rgb(202, 239, 239);
+   justify-content: space-between;
+   
+   
+}
+
+li:last-child{
+    border-right: none;
+}
+
+li a:hover:not(.active){
+      background-color: black;
+}
+.active{
+    background-color:goldenrod;
+}
+.login{
+    height: 200px;
+    width: 200px;
+    background: rgb(122, 161, 167);
+    margin: 100px 550px ;
+    padding: 50px;
+}
+.login1{
+    height: 300px;
+    width: 200px;
+    background: rgb(122, 161, 167);
+    margin: 100px 550px ;
+    padding: 50px;
+} */
+.login1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login1 input[type="email"],
+  .login1 input[type="password"],
+  .login1 input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login1 input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login1 input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .login1 {
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .login1 {
+      width: 100%;
+    }
+  }
+  .main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+  

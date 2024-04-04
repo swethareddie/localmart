@@ -1,0 +1,48 @@
+/* .main{
+    margin-top: 75px;
+} */
+/* Style for the main container */
+.main {
+    width: 80%; /* Adjust width as needed */
+    margin-top: 100px; /* Center the container */
+    font-family: Arial, sans-serif; /* Choose appropriate font family */
+    color: #333; /* Text color */
+}
+
+/* Style for section */
+section#about {
+    padding: 20px; /* Add padding around the section */
+    background-color: #f9f9f9; /* Background color */
+    border-radius: 10px; /* Add rounded corners */
+}
+
+/* Style for headings */
+h2, h3 {
+    color: #007bff; /* Heading color */
+}
+
+/* Style for paragraphs */
+p {
+    line-height: 1.5; /* Set line height */
+}
+
+/* Style for unordered list */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+/* Style for list items */
+li {
+    margin-bottom: 10px; /* Add space between list items */
+}
+
+/* Style for links */
+a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}

@@ -1,0 +1,166 @@
+<!-- <div class="main">
+    <form [formGroup]="registrationForm" (ngSubmit)="save()">
+        <h1>{{title}}</h1>
+    <div>
+        <label for="username">User Name</label>
+        <input type="text" formControlName="username"/>
+        <div *ngIf="username.invalid && (username.dirty || username.touched)"id="error">
+            <div *ngIf="username.hasError('required')">
+                First name can not be left blank..
+            </div> 
+            <div *ngIf="username.hasError('pattern')">
+                First name should be alphabatic...
+            </div>
+     </div>
+    </div>
+    <div >
+        <label for="password">Password:</label>
+        <input type="password" formControlName="password"/>
+        <div *ngIf="password.invalid && (password.dirty || password.touched)" id="error">
+            <div *ngIf="password.hasError('required')">
+               Password can not be left blank..
+            </div>
+            <div *ngIf="password.hasError('maxlength')">
+                Password can have maximum 8 characters..
+            </div>
+        </div>
+    </div>
+    <div>
+        <fieldset>
+        <legend>Gender:</legend>
+        <input type="radio" formControlName="gender" value="Male"/>
+        <label>Male</label>
+        <input type="radio" formControlName="gender" value="Female"/>
+        <label>Female</label>
+        <input type="radio" formControlName="gender" value="Trans"/>
+        <label>Trans</label>
+        </fieldset>
+        <div *ngIf="gender.invalid && (gender.dirty || gender.touched)" id="error">
+            <div *ngIf="gender.hasError('required')">
+                Please select gender..
+            </div>
+        </div>
+    </div>
+    <div>
+        <label for="email">Email Id:</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" formControlName="email"/>
+        <div *ngIf="email.invalid && (email.dirty || email.touched)" id="error">
+            <div *ngIf="email.hasError('required')">
+                Email id can not be left blank..
+            </div>
+            <div *ngIf="email.hasError('minlength')">
+                Email id can have minimum 5 characters..
+            </div>
+            <div *ngIf="email.hasError('maxlength')">
+                Email id can have maximum 60 characters..
+            </div>
+            <div *ngIf="email.hasError('pattern')">
+                Email id can be alphabetic, numbers or . &#64; only..
+            </div>
+        </div>
+    </div> -->
+   
+    <!-- <div >
+        <label for="password">Re-Enter Password:</label>
+        <input type="password" formControlName="reenterpassword"/>
+        <div *ngIf="reenterpassword.invalid && (reenterpassword.dirty || reenterpassword.touched)" id="error">
+            <div *ngIf="reenterpassword.hasError('required')">
+                Reenter Password can not be left blank..
+            </div>
+            <div *ngIf="reenterpassword.hasError('maxlength')">
+                Reenter Password can have maximum 8 characters..
+            </div>
+        </div>
+    </div> -->
+  
+    <!-- <div>
+        <fieldset>
+            <legend>User Type:</legend>
+            <input type="radio" formControlName="userType" value="Admin"/>
+            <label>Admin</label>
+            <input type="radio" formControlName="userType" value="Customer"/>
+            <label>Customer</label>
+           
+            </fieldset>
+            <div *ngIf="userType.invalid && (userType.dirty || userType.touched)" id="error">
+                <div *ngIf="userType.hasError('required')">
+                    Please select usertype..
+                </div>
+            </div>
+        </div>
+        <div>
+            <label for="phoneNumber">phone Number</label>
+            <input type="text" formControlName="phoneNumber"/>
+            <div *ngIf="phoneNumber.invalid && (phoneNumber.dirty || phoneNumber.touched)"id="error">
+                <div *ngIf="phoneNumber.hasError('required')">
+                    phone Number can not be left blank..
+                </div> 
+                <div *ngIf="phoneNumber.hasError('pattern')">
+                    phone Number should be numeric...
+                </div>
+         </div>
+        </div>
+        <label for="address">Address:</label><br>
+        <textarea formControlName="address"  ></textarea>
+        <div *ngIf="address.invalid && (address.dirty || address.touched)" id="error">
+            <div *ngIf="address.hasError('required')">
+                Address cannot be blank............
+            </div>
+        </div>
+
+            <button type="submit" class="btn btn-primary" (click)="save()">Register</button>
+        </form>
+    </div> -->
+    <div class="container mt-4">
+        <div class="card">
+            <h1>User Registration</h1>
+            <form>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" [(ngModel)]="username" [ngModelOptions]="{standalone: true}" class="form-control" id="username" placeholder="Enter Username">
+                </div>
+    
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" [(ngModel)]="email" [ngModelOptions]="{standalone: true}" class="form-control" id="email" placeholder="Enter Email">
+                </div>
+    
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" [(ngModel)]="password" [ngModelOptions]="{standalone: true}" class="form-control" id="password" placeholder="Enter Password">
+                </div>
+    
+    
+    
+                <div class="form-group">
+                    <label>User Type</label>
+                    <select [(ngModel)]="userType" [ngModelOptions]="{standalone: true}" class="form-control" id="userType">
+                        <option value="admin">Admin</option>
+                        <option value="customer">Customer</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label>Gender</label>
+                    <select [(ngModel)]="gender" [ngModelOptions]="{standalone: true}" class="form-control" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+    
+                <div class="form-group">
+                    <label>Phone Number</label>
+                    <input type="tel" [(ngModel)]="phoneNumber" [ngModelOptions]="{standalone: true}" class="form-control" id="phoneNumber" placeholder="Enter Phone Number">
+                </div>
+    
+                <div class="form-group">
+                    <label>Address</label>
+                    <textarea [(ngModel)]="address" [ngModelOptions]="{standalone: true}" class="form-control" id="address" placeholder="Enter Address"></textarea>
+                </div>
+    
+                <button type="submit" class="btn btn-primary" (click)="save()">Register</button>
+            </form>
+        </div>
+    </div>
+
